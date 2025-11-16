@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Project Management</title>
+        <link rel="stylesheet" href="style.css">
+        <!--Linking slider-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+    </head>
+
+
+    <body>
+        <!--========== HEADER ==========-->
+        <div class="slider-container">
+            <div class="slider-wrapper swiper-slide">
+                <a href="#" class="nav__logo">Welcome</a>
+                
+                <div class="slider-item swiper-slide">
+                    <div class ="slider-content">
+                        <h3 class ="slide-subtitle">Slide 01</h3>
+                        
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Projects</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">About us</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Contact us</a></li>
+                    </ul>
+                    <h2 class="slide-title">Hello</h2>
+                    <p class = "site-description">Landing page for project management company</p>
+                <a href = "#" class="slide-button"><span>Learn More</span></a>
+                    </div>
+                </div>
+        
+                
+                <div class="slider-item swiper-slide">
+                    <div class ="slider-content">
+                        <h3 class ="slide-subtitle">Slide 02</h3>
+                    <h2 class="slide-title">Hello</h2>
+                    <p class = "site-description">Landing page for project management company</p>
+                <a href = "#" class="slide-button"><span>Learn More</span></a>
+                    </div>
+                </div>
+
+                  <div class="slider-item swiper-slide">
+                    <div class ="slider-content">
+                        <h3 class ="slide-subtitle">Slide 03</h3>
+                    <h2 class="slide-title">Hello</h2>
+                    <p class = "site-description">Landing page for project management company</p>
+                <a href = "#" class="slide-button"><span>Learn More</span></a>
+                    </div>
+                </div>
+
+                  <div class="slider-item swiper-slide">
+                    <div class ="slider-content">
+                        <h3 class ="slide-subtitle">Slide 04</h3>
+                    <h2 class="slide-title">Hello</h2>
+                    <p class = "site-description">Landing page for project management company</p>
+                <a href = "#" class="slide-button"><span>Learn More</span></a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </body>
+    
+<!--Linking swiper script-->
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+<script src ="script.js"></script>
+
+    </html>
