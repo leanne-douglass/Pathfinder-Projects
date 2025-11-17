@@ -1,92 +1,69 @@
-/* Import Google font - Elms Sans */
-@import url('https://fonts.googleapis.com/css2?family=Elms+Sans:wght@100..900&display=swap');
-
- *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Elms Sans", sans-serif;
-}
-.slider-container {
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
+<!-- File: style.css -->
+:root { --text-on-hero: #fff; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { height: 100%; }
+body {
+  font-family: "Elms Sans", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: #050505;
 }
 
-.slider-wrapper .slider-item {
-    position: relative;
-    width: 100%;
-    height: 100vh;
+/* Top nav overlay (pointer-events prevents blocking drag) */
+.topbar {
+  position: fixed; inset: 0 0 auto 0; height: 64px;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0 24px; z-index: 50; pointer-events: none;
+}
+.topbar a, .topbar ul, .topbar li { pointer-events: auto; }
+.nav__logo { color: #fff(--text-on-hero); text-decoration: none; font-weight: 700; font-size: 1.125rem; }
+.nav__list { display: flex; gap: 16px; list-style: none; }
+.nav__link { color: var(--text-on-hero); text-decoration: none; font-weight: 500; font-size: 0.95rem; opacity: 0.95; }
+.nav__link:hover { text-decoration: underline; }
+
+/* Swiper container */
+.slider-container.swiper { width: 100%; height: 100vh; }
+
+/* Slide base */
+.swiper-slide {
+  position: relative; width: 100%; height: 100vh; overflow: hidden;
+  display: grid; place-items: center;
+}
+.swiper-slide::before {
+  content: ""; position: absolute; inset: 0;
+  background-position: center; background-size: cover; background-repeat: no-repeat;
+  filter: brightness(0.45);
 }
 
-.slider-wrapper .slider-item::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("images/pc.png");
-    background-position: center;
-    background-size: cover;
+/* Backgrounds per slide (adjust image paths as needed) */
+.swiper-slide:nth-child(1)::before { background-image: url("images/pc.png"); }
+.swiper-slide:nth-child(2)::before { background-image: url("images/pattern.jpg"); }
+.swiper-slide:nth-child(3)::before { background-image: url("images/geo.jpg"); }
+.swiper-slide:nth-child(4)::before { background-image: url("images/tunnel.jpg"); }
+
+/* Slide content */
+.slider-content {
+  position: relative; z-index: 2; color: var(--text-on-hero);
+  max-width: 920px; width: 92%; text-align: left;
 }
-
-.slider-wrapper .slider-item:nth-child(3):before {
- background-image: url("images/pattern.jpg");
+.slide-subtitle {color: #fff; font-size: 1rem; font-weight: 400; letter-spacing: 0.08em; opacity: 0.9; }
+.slide-title {color: #fff; font-size: clamp(1.75rem, 4vw, 3rem); font-weight: 800; margin-top: 8px; text-transform: uppercase; }
+.site-description {color: #fff; margin-top: 18px; line-height: 1.6; max-width: 56ch; opacity: 0.95; }
+blockquote {color: #fff; font-weight: 400px; font-size: larger; font-style: italic;}
+.slide-button {
+  display: inline-block; margin-top: 20px; min-width: 220px; text-align: center;
+  color: #fff; text-decoration: none; letter-spacing: 0.08em; text-transform: uppercase;
+  border: 2px solid #fff; padding: 12px 18px; font-weight: 700; transition: 0.25s ease;
 }
+.slide-button:hover { color: #000; background: #fff; }
 
-.slider-wrapper .slider-item:nth-child(4):before {
- background-image: url("images/geo.jpg");
+/* Swiper controls */
+.swiper-pagination-bullets .swiper-pagination-bullet { width: 10px; height: 10px; }
+.swiper-button-next, .swiper-button-prev { color: #fff; filter: drop-shadow(0 2px 8px rgba(0,0,0,.4)); }
+
+/* Small screens */
+@media (max-width: 640px) {
+  .topbar { height: 56px; padding: 0 12px; }
+  .nav__list { gap: 10px; }
+  .slide-title { line-height: 1.15; }
+  .site-description { font-size: 0.95rem; }
+  .slide-button { min-width: 180px; }
 }
-
-.slider-wrapper .slider-item:nth-child(5):before {
- background-image: url("images/tunnel.jpg");
-}
-
-.slider-wrapper .slider-item .slider-content{
-   position: relative; 
-   color: aliceblue;
-    z-index: 2; 
-}
-
-.slider-item .slider-content .slide-subtitle {
-    font-size: 1rem;
-    font-weight: normal;
-}
-
-.slider-item .slider-content .slide-title {
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin-top: 5px;
-    text-transform: uppercase;
-}
-
-.slider-item .slider-content .site-description {
-    margin-top: 25px;
-    line-height: 25px;
-}
-
-.slider-item .slider-content .slide-button {
-    color: #FFFF;
-    display: block;
-    width: 250px;
-    padding: 10px;
-    margin-top: 4px;
-    font-size: 0.8rem;
-    font-weight: 600;
-    text-align: center;
-    letter-spacing: 1px;
-    text-decoration: none;
-    text-transform: uppercase;
-    border: 2px solid #FFFF;
-    transition: 0.8s ease;
-
-}
-
-.slider-item .slider-content .slide-button:hover {
-    color:black;
-    background: #FFFF;
-}
-
-
-

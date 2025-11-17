@@ -1,107 +1,86 @@
+<!-- File: index.html -->
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Project Management</title>
-        <link rel="stylesheet" href="styles.css">
-        </head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Project Management</title>
 
-    <body>
-        <!--========== HEADER ==========-->
-        <div class="slider-container">
-            <div class="slider-wrapper">
-                <a href="#" class="nav__logo">Welcome</a>
-                
-                <div class="slider-item">
-                    <div class ="slider-content">
-                        <h3 class ="slide-subtitle">Slide 01</h3>
-                        <h2 class="slide-title">Hello</h2>
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">Projects</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">About us</a></li>
-                        <li class="nav__item"><a href="#" class="nav__link">Contact us</a></li>
-                    </ul>
-                </div>
-                
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
-            </nav>
-        </header>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Elms+Sans:wght@100..900&display=swap" rel="stylesheet"/>
 
-        <!--========== MAIN ==========-->
-        <main class='main'>
-            <div class="swiper-container gallery-top">
-                <div class="swiper-wrapper">
-                    <!--========== discover 1 ==========-->
-                    <section class="discover swiper-slide">
-                        <img src="beach.jpg" alt="" class="discover__bg">
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
 
-                        <div class="discover__container bd-container">
-                            <div class="discover__data">
-                                <h2 class="discover__subtitle">Discover</h2>
-                                <h1 class="discover__title">Your Next Destination Adventure</h1>
-                                <p class="discover__description">Explore breathtaking destinations, unique experiences and unforgettable journeys across the world.</p>
-                                <a href="#" class="explore__button">Explore <i class='bx bx-right-arrow-alt explore__button-icon'></i></a>
-                                  </div>    
-                            </div>
-                    </section>
-        
-                    <!--========== discover 2 ==========-->
-                    <section class="discover swiper-slide">
-                        <img src="bali.jpg" alt="" class="discover__bg">
+  <!-- App CSS -->
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <!-- Top navigation overlay -->
+  <header class="topbar" aria-label="Top Navigation">
+    <nav aria-label="Primary">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#" class="nav__link">Home</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Projects</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">About us</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Contact us</a></li>
+      </ul>
+    </nav>
+  </header>
 
-                        <div class="discover__container bd-container">
-                            <div class="discover__data">
-                                <h2 class="discover__subtitle">discover</h2>
-                                <h1 class="discover__title">Bali</h1>
-                                <p class="discover__description">It is an Indonesian island known and beautiful for its lush active volcanic mountains.</p>
-                                <a href="#" class="discover__button">Explore <i class='bx bx-right-arrow-alt discover__button-icon'></i></a>
-                            </div>
+  <!-- Swiper -->
+  <div class="slider-container swiper" aria-label="Hero Slider">
+    <div class="swiper-wrapper">
+      <!-- Slide 01 -->
+      <section class="swiper-slide" aria-label="Slide 1">
+        <div class="slider-content">
+          <h3 class="slide-subtitle">Pathfinder Projects</h3>
+          <h2 class="slide-title">Welcome</h2>
+          <p class="site-description">At Pathfinder Projects, we specialise in turning ideas into outcomes. Whether you’re a small business, a growing start-up, or an established organisation, we provide structured, reliable, and results-driven project management that keeps your goals on track.</p>
+          <a href="#" class="slide-button"><span>Learn More</span></a>
+        </div>
+      </section>
 
-                            <div class="discover__video">
-                                <div class="discover__video-content">
-                                    <i class='bx bx-play-circle discover__video-icon'></i>
-                                </div>
-                            </div>  
-                        </div>
-                    </section>
-                    
-                    <!--========== discover 3 ==========-->
-                    <section class="discover swiper-slide">
-                        <img src="palawan.jpg" alt="" class="discover__bg">
+      <!-- Slide 02 -->
+      <section class="swiper-slide" aria-label="Slide 2">
+        <div class="slider-content">
+          <h3 class="slide-subtitle">Pathfinder Projects</h3>
+          <h2 class="slide-title">Discover</h2>
+          <p class="site-description">From concept to completion, we’re here to remove the overwhelm and bring clarity to every step. With tailored project roadmaps, milestone tracking, and hands-on support, we help you navigate challenges, optimise workflows, and bring your projects to life—on time and with confidence. <blockquote>Your path to success starts here. Let’s build something remarkable together.</blockquote></p>
+          <a href="#" class="slide-button"><span>Our Services</span></a>
+        </div>
+      </section>
 
-                        <div class="discover__container bd-container">
-                            <div class="discover__data">
-                                <h2 class="discover__subtitle">discover</h2>
-                                <h1 class="discover__title">Palawan</h1>
-                                <p class="discover__description">Also known as La Paragua, it is the largest island in the province of Palawan.</p>
-                                <a href="#" class="discover__button">Explore <i class='bx bx-right-arrow-alt discover__button-icon'></i></a>
-                            </div>
+      <!-- Slide 03 -->
+      <section class="swiper-slide" aria-label="Slide 3">
+        <div class="slider-content">
+          <h3 class="slide-subtitle">Pathfinder Projects</h3>
+          <h2 class="slide-title">Execute</h2>
+          <p class="site-description">At Pathfinder Projects, execution isn’t just about getting tasks done, it’s about delivering outcomes that matter. Once your project plan is in place, we move with precision, clarity, and momentum to bring your vision to life. Our proven frameworks ensure every milestone is met, risks are managed, and progress is transparent from start to finish. Explore how we’ve helped businesses streamline operations, launch new services, and deliver complex projects with efficiency and impact. <blockquote> Real projects. Real results. Real growth.</blockquote></p>
+          <a href="#" class="slide-button"><span>See Case Studies</span></a>
+        </div>
+      </section>
 
-                            <div class="discover__video">
-                                <div class="discover__video-content">
-                                    <i class='bx bx-play-circle discover__video-icon'></i>
-                                </div>
-                            </div>  
-                        </div>
-                    </section>
+      <!-- Slide 04 -->
+      <section class="swiper-slide" aria-label="Slide 4">
+        <div class="slider-content">
+          <h3 class="slide-subtitle">Pathfinder Projects</h3>
+          <h2 class="slide-title">Deliver</h2>
+          <p class="site-description">Your goals, delivered with precision. At Pathfinder Projects, we ensure every project ends exactly where it should, with measurable results, streamlined processes, and outcomes that create long-lasting value. From final handover to performance review, we stay committed until your project delivers at its highest potential. <blockquote>Ready to Take the Next Step?</blockquote></p> 
+          <a href="#" class="slide-button"><span>Contact Us</span></a>
+        </div>
+      </section>
+    </div>
 
-            <!--========== CONTROLS ==========-->
-            <div class="controls gallery-thumbs">
-                <div class="controls__container swiper-wrapper">
-                    <img src="beach.jpg" alt="" class="controls__img swiper-slide">
-                    <img src="bali.jpg" alt="" class="controls__img swiper-slide">
-                    <img src="palawan.jpg" alt="" class="controls__img swiper-slide">
-                </div>
-            </div>
-        </main>
+    <!-- Controls -->
+    <div class="swiper-pagination" aria-label="Slides pagination"></div>
+    <div class="swiper-button-prev" aria-label="Previous slide" title="Previous"></div>
+    <div class="swiper-button-next" aria-label="Next slide" title="Next"></div>
+  </div>
 
-      <script src="gsap.min.js"></script>
-<script src="swiper-bundle.min.js"></script>
-<script src="main.js"></script>
-
-    </body>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <!-- App JS -->
+  <script src="script.js"></script>
+</body>
 </html>
