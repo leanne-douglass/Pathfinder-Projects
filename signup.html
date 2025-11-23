@@ -1,3 +1,4 @@
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="UTF-8"/>
@@ -9,14 +10,23 @@
 <body>
   <header class="topbar" aria-label="Top Navigation">
     <nav aria-label="Primary">
-      <ul class="nav__list">
-        <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
-        <li class="nav__item"><a href="projects.html" class="nav__link">Projects</a></li>
-        <li class="nav__item"><a href="aboutus.html" class="nav__link">About us</a></li>
-        <li class="nav__item"><a href="contactus.html" class="nav__link">Contact us</a></li>
-        <li class="nav__item"><a href="signup.html" class="nav__link" aria-current="page">Join us</a></li>
-      </ul>
-      <a href="signin.html" class="nav_member">Already a Member? Sign in</a>
+      <button class="nav-toggle" aria-label="Open menu" aria-controls="primary-menu" aria-expanded="false">
+        <svg class="nav-toggle__icon" width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <span class="nav-toggle__text">Menu</span>
+      </button>
+
+      <div id="primary-menu" class="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="projects.html" class="nav__link">Projects</a></li>
+          <li class="nav__item"><a href="aboutus.html" class="nav__link">About us</a></li>
+          <li class="nav__item"><a href="contactus.html" class="nav__link">Contact us</a></li>
+          <li class="nav__item"><a href="signup.html" class="nav__link" aria-current="page">Join us</a></li>
+        </ul>
+        <a href="signin.html" class="nav_member">Already a Member? Sign in</a>
+      </div>
     </nav>
   </header>
 
@@ -33,7 +43,6 @@
       <h2 id="signup-title" class="visually-hidden">Registration form</h2>
 
       <form class="form" action="#" method="post" novalidate>
-        <!-- why: keep labels clickable + required a11y -->
         <div class="form-row">
           <label for="email">Email<span aria-hidden="true">*</span></label>
           <input id="email" name="email" type="email" autocomplete="email" required placeholder="you@domain.com"/>
@@ -47,11 +56,6 @@
         <div class="form-row">
           <label for="password">Password<span aria-hidden="true">*</span></label>
           <input id="password" name="password" type="password" autocomplete="new-password" minlength="8" required placeholder="Minimum 8 characters"/>
-        </div>
-
-        <div class="form-row">
-          <label for="company name">Company Name/Project Name*</label>
-          <input id="company name" name="companyname" type="companyname"/>
         </div>
 
         <div class="form-row">

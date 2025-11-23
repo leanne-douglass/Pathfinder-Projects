@@ -1,30 +1,36 @@
 <!doctype html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Pathfinder Projects</title>
-  <link href="https://fonts.googleapis.com/css2?family=Elms+Sans:wght@100..900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Elms+Sans:wght@100..900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
 </head>
-
 <body>
   <header class="topbar" aria-label="Top Navigation">
     <nav aria-label="Primary">
-      <ul class="nav__list">
-        <li class="nav__item"><a href="index.html" class="nav__link" aria-current="page">Home</a></li>
-        <li class="nav__item"><a href="projects.html" class="nav__link">Projects</a></li>
-        <li class="nav__item"><a href="aboutus.html" class="nav__link">About us</a></li>
-        <li class="nav__item"><a href="contactus.html" class="nav__link">Contact us</a></li>
-        <li class="nav__item"><a href="signup.html" class="nav__link">Join us</a></li>
-      </ul>
-      <a href="signin.html" class="nav_member">Already a Member? Sign in</a>
+      <button class="nav-toggle" aria-label="Open menu" aria-controls="primary-menu" aria-expanded="false">
+        <svg class="nav-toggle__icon" width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <span class="nav-toggle__text">Menu</span>
+      </button>
+
+      <div id="primary-menu" class="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="index.html" class="nav__link" aria-current="page">Home</a></li>
+          <li class="nav__item"><a href="projects.html" class="nav__link">Projects</a></li>
+          <li class="nav__item"><a href="aboutus.html" class="nav__link">About us</a></li>
+          <li class="nav__item"><a href="contactus.html" class="nav__link">Contact us</a></li>
+          <li class="nav__item"><a href="signup.html" class="nav__link">Join us</a></li>
+        </ul>
+        <a href="signin.html" class="nav_member">Already a Member? Sign in</a>
+      </div>
     </nav>
   </header>
 
-  <!-- HERO SLIDER -->
   <main>
     <div class="hero-swiper slider-container swiper" aria-label="Hero Slider">
       <div class="swiper-wrapper">
@@ -45,7 +51,7 @@
             <h2 class="slide-title">Discover</h2>
             <p class="site-description">
               From concept to completion…
-            <blockquote>Your path to success starts here. Let’s build something remarkable together.</blockquote>
+              <blockquote>Your path to success starts here. Let’s build something remarkable together.</blockquote>
             </p>
             <a href="#" class="slide-button"><span>Our Services</span></a>
           </div>
@@ -57,7 +63,7 @@
             <h2 class="slide-title">Execute</h2>
             <p class="site-description">
               Execution isn’t just about getting tasks done…
-            <blockquote>Real projects. Real results. Real growth.</blockquote>
+              <blockquote>Real projects. Real results. Real growth.</blockquote>
             </p>
             <a href="projects.html" class="slide-button"><span>See Case Studies</span></a>
           </div>
@@ -69,7 +75,7 @@
             <h2 class="slide-title">Deliver</h2>
             <p class="site-description">
               Your goals, delivered with precision…
-            <blockquote>Ready to Take the Next Step?</blockquote>
+              <blockquote>Ready to Take the Next Step?</blockquote>
             </p>
             <a href="#" class="slide-button"><span>Contact Us</span></a>
           </div>
@@ -85,5 +91,4 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
   <script src="script.js"></script>
 </body>
-
 </html>
