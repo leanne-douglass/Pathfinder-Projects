@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects • Pathfinder</title>
+  <link href="https://fonts.googleapis.com/css2?family=Elms+Sans:wght@100..900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header class="topbar" aria-label="Top Navigation">
+    <nav aria-label="Primary">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
+        <li class="nav__item"><a href="projects.html" class="nav__link" aria-current="page">Projects</a></li>
+        <li class="nav__item"><a href="aboutus.html" class="nav__link">About us</a></li>
+        <li class="nav__item"><a href="contactus.html" class="nav__link">Contact us</a></li>
+        <li class="nav__item"><a href="signup.html" class="nav__link">Join us</a></li>
+      </ul>
+      <a href="signin.html" class="nav_member">Already a Member? Sign in</a>
+    </nav>
+  </header>
+
+  <main class="main-pad">
+    <h1 class="page-title">Recent Projects</h1>
+
+    <div class="cards-swiper swiper" aria-label="Projects carousel">
+      <ul class="card-list swiper-wrapper">
+        <li class="card-item swiper-slide">
+          <a href="#" class="card-link">
+            <img src="images/tunnel.jpg" alt="Designer showcase project" class="card-image" loading="lazy">
+            <span class="badge badge-designer">Designer</span>
+            <h2 class="card-title">Lorem ipsum dolor sit explicabo adipisicing elit</h2>
+          </a>
+        </li>
+
+        <li class="card-item swiper-slide">
+          <a href="#" class="card-link">
+            <img src="images/tunnel.jpg" alt="Developer case study" class="card-image" loading="lazy">
+            <span class="badge badge-developer">Developer</span>
+            <h2 class="card-title">Lorem ipsum dolor sit explicabo adipisicing elit</h2>
+          </a>
+        </li>
+
+        <li class="card-item swiper-slide">
+          <a href="#" class="card-link">
+            <img src="images/tunnel.jpg" alt="Marketing launch project" class="card-image" loading="lazy">
+            <span class="badge badge-marketer">Marketer</span>
+            <h2 class="card-title">Lorem ipsum dolor sit explicabo adipisicing elit</h2>
+          </a>
+        </li>
+
+        <li class="card-item swiper-slide">
+          <a href="#" class="card-link">
+            <img src="images/tunnel.jpg" alt="Gaming event project" class="card-image" loading="lazy">
+            <span class="badge badge-gamer">Gamer</span>
+            <h2 class="card-title">Lorem ipsum dolor sit explicabo adipisicing elit</h2>
+          </a>
+        </li>
+
+        <li class="card-item swiper-slide">
+          <a href="#" class="card-link">
+            <img src="images/tunnel.jpg" alt="Editorial redesign project" class="card-image" loading="lazy">
+            <span class="badge badge-editor">Editor</span>
+            <h2 class="card-title">Lorem ipsum dolor sit explicabo adipisicing elit</h2>
+          </a>
+        </li>
+      </ul>
+
+      <div class="swiper-pagination cards-pagination"></div>
+      <button class="swiper-button-prev cards-button-prev" aria-label="Previous projects"></button>
+      <button class="swiper-button-next cards-button-next" aria-label="Next projects"></button>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
